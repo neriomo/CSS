@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Posicionamiento relativo de los elementos-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionamiento relativo</title>
+    <style type="text/css">
+        p {font-size: 1.3em;
+            font-family: fantasy,cursive,monospace;}
+        
+        span {color: red;
+                font-size: 0.6em;
+                height: 1em;}
+        
+        .super {position: relative;
+                top: -1ex;}
+        
+        .sub { position: relative;
+                bottom: -1ex;}
+        .desplizq {position: relative;
+                    left: -1ex;}
+        
+        .desplder {position: relative;
+                    right: -1ex;}
+    
+    </style>
+</head>
+<body>
+   <p>El texto al final de esta oracion <span class="super"> esta en super indice</span></p>
+   
+   <p>El texto al final de esta oracion <span class="sub"> esta en sub indice</span></p>
+   
+   <p>El texto al final de esta oracion <span class="desplizq"> esta desplazado a la izquierda</span></p>
+   
+   <p>El texto al final de esta oracion <span class="desplder"> esta desplazado a la derecha</span></p>
+    
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!-- Posicionamiento absoluto de los elementos-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionamiento absoluto</title>
+    <style type="text/css">
+        .imagen_fondo {position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        z-index: 1;}
+        
+        .imagen_primerplano {position: absolute;
+                            top: 200px;
+                            left: 0px;
+                            z-index: 2;}
+        
+        .texto         {position: absolute;
+                        top: 150px;
+                        left: 00px;
+                        z-index: 3;
+                        font-size: 20pt;
+                        font-family: cursive,fantasy,serif;}
+    
+    </style>
+</head>
+<body>
+    <p><img src="resources/fondo-abstracto-amarillo-rojo-5703271.jpg" class="imagen_fondo" alt="Primera imagen posicionada" width="200px"></p>
+    
+    <p><img src="resources/Amarelos%20Fondo%20De%20Pantalla%20Rojo%20Amarillo%20Y%20Azul.jpg" class="imagen_primerplano" alt="Segunda imagen posicionada" width="200px"></p>
+    
+    <p class="texto">Texto posicionado</p>
+    
+</body>
+</html>

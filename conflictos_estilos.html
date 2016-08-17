@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- herencia en hojas de estilo-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>M&aacute;s estilos</title>
+    
+    <style type="text/css">
+
+        body { font-family:cursive;}
+        a.nodec {text-decoration: none;}
+        
+        a:hover {text-decoration: underline; font-size: 20pt;}
+        
+        li em {font-weight: bold;}
+        h1 em {text-decoration: underline;}
+        ul {margin-left: 20px;}
+        ul ul {font-size: 1.8em;}
+
+    </style>
+
+</head>
+<body>
+    <h1><em>Lista de compras para el lunes</em></h1>
+    
+    <ul>
+        <li>Leche</li>
+        <li>Pan
+            <ul>
+                <li>Pan Blanco</li>
+                <li>Pan Centeno</li>
+                <li>Pan de Trigo entero</li>
+            </ul>
+        </li>
+        <li>Zanahoria</li>
+        <li>yogurt</li>
+        <li>Pizza <em>con champi&ntilde;es</em></li>
+    </ul>
+    
+    <p><em>Ir a la </em>
+    
+        <a class="nodec" href="www.facebook.com">Pagina de facebook</a>
+        </p>
+</body>
+</html>
