@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Uso de consultas de medios para volver a dar
+formato a una pagina con base a la anchura del dispositivo-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosultas de medios</title>
+
+    <style type="text/css">
+    
+        p
+        {
+            margin: 0.9em 0em;
+        }
+        
+        /*estilos para smartphones con anchuras de pantalla 480px o menos*/
+        @media handheld and (max-width: 480px),
+            screen and (max-device-width:480px),
+             screen and (max-width:480px)
+        {
+            div
+            {
+                column-count: 1;
+                transition: 1s ease-out; 
+                font-family:sans-serif;
+                background-color: gray;
+                font-weight: bold;
+                color: white;
+                
+            }
+        }
+        
+        @media only screen and (min-width:481px) and
+            (max-width:1024px)
+        {
+            div
+            {
+                column-count: 2;
+                column-gap: 30px;
+                column-rule: 1px outset black;
+                transition: 1s ease-out; 
+                font-family:sans-serif;
+                background-color: #5a5757;
+                font-weight: bold;
+                color: white;
+            }
+        }
+        
+        
+        @media only screen and (min-width:1025px)
+        {
+            div
+            {
+                column-count: 3;
+                column-gap: 30px;
+                column-rule: 1px outset white;
+                transition: 1s ease-out; 
+                font-family:sans-serif;
+                background-color: #383636;
+                font-weight: bold;
+                color: white;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1 style="background-color:royalblue; color:white; text-align:center;">Computadoras, hardware y software</h1>
+    </header>
+    <div class="multicolumna">
+        
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis saepe obcaecati nam adipisci vel, consectetur a nihil. Dignissimos sunt consequuntur dolorum a nihil. Culpa, ab, consequatur! Corrupti eos, repudiandae sed.
+            
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum labore quis, fuga a eum unde sint tempore nobis delectus explicabo ducimus dolore officiis accusantium sit ipsa, omnis suscipit architecto repudiandae.
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam delectus repellendus, facere dolorem dolores vel ratione cum debitis officiis natus magni eius quis est architecto? Quam dolorem voluptatibus, possimus perspiciatis!
+        </p>
+    </div>
+    <footer style=" text-align: center;">
+        <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit illum nostrum dolorem, sequi commodi? Hic mollitia possimus, perspiciatis consectetur nobis ratione blanditiis quam voluptatum. Recusandae, rerum. Culpa earum, reiciendis dolores!</em>
+    </footer>
+    
+</body>
+</html>

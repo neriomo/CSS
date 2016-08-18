@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--Estirar y repetir una imagen para crear un borde-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borde de imagen</title>
+    <style type="text/css">
+    
+        div
+        {
+            border-width: 30px;
+            width: 234px;
+            padding: 20px 20px;
+        }
+        #stretch
+        {
+            -webkit-border-image: url(resources/Double_arrow_icon.png) 80 80 80 80 stretch;
+
+            -moz-border-image :url(resources/Double_arrow_icon.png) 80 80 80 80 stretch;
+
+            -o-border-image: url(resources/Double_arrow_icon.png) 80 80 80 80 stretch;
+
+            border-image: url(resources/Double_arrow_icon.png) 80 80 80 80 stretch;
+        }      
+        #repeat
+        {
+            -webkit-border-image:url(resources/Double_arrow_icon.png) 34% 34% repeat;
+
+            -moz-border-image:url(resources/Double_arrow_icon.png) 34% 34% repeat;
+
+            -o-border-image:url(resources/Double_arrow_icon.png) 34% 34% repeat;
+
+            border-image:url(resources/Double_arrow_icon.png) 34% 34% repeat;
+        }
+
+    
+    </style>
+    
+</head>
+<body>
+   <h2>Bordes de imagen</h2>
+   <img src="resources/Double_arrow_icon.png" alt="imagen utilizada para demostrar los bordes" width="320px" height="240px">
+    
+    <p><div id= "stretch">Hablame</div></p>
+    <p><div id= "repeat">Hablame</div></p>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--fusionar una imagen en otra mediante CSS-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funsion de imagenes</title>
+    <style type="text/css">
+    
+        #portada
+        {
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        #portada img
+        {
+            /*posiciona las imagenes en el mismo sitio*/
+            position: absolute;
+            left: 0;
+            /*Define una transicion de 4 seg */
+            transition: opacity 4s ease-in-out;
+        }
+        
+        /*Cuando el cursor se para sobre una imagen con atributo top y definidio en el selector portada se cambia la opacidad a 0*/
+        #portada img.top:hover
+        {
+            opacity: 0;
+        }
+    
+    </style>
+
+
+</head>
+<body>
+   
+   <div id="portada">
+   <!--El que esta debajo-->
+        <img class="bottom" src="resources/Double_arrow_icon.png" alt="flechas">
+    <!--El que esta arriba-->
+        <img class="top" src="resources/camello.jpg" alt="camello">
+    
+    </div>
+        
+</body>
+</html>

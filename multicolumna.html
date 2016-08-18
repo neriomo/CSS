@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--Texto multicolumna en Css3-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Varias Columnas</title>
+    <style type="text/css">
+        p
+        {
+            margin: 0.9em 0em;
+        }
+    
+        .multicolumna
+        {
+            /*establecer el numero de filas*/
+            column-count: 3;
+            /*establecer el espacio entre columnas en 30px*/
+            column-gap: 30px;
+            
+            /*agregar una linea negra de 1px entre cada columna*/
+            column-rule: 1px outset black;
+           
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Computadoras, hardware y software</h1>
+    </header>
+    <div class="multicolumna">
+        
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis saepe obcaecati nam adipisci vel, consectetur a nihil. Dignissimos sunt consequuntur dolorum a nihil. Culpa, ab, consequatur! Corrupti eos, repudiandae sed.
+            
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum labore quis, fuga a eum unde sint tempore nobis delectus explicabo ducimus dolore officiis accusantium sit ipsa, omnis suscipit architecto repudiandae.
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam delectus repellendus, facere dolorem dolores vel ratione cum debitis officiis natus magni eius quis est architecto? Quam dolorem voluptatibus, possimus perspiciatis!
+        </p>
+    </div>
+    <footer style=" text-align: center;">
+        <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit illum nostrum dolorem, sequi commodi? Hic mollitia possimus, perspiciatis consectetur nobis ratione blanditiis quam voluptatum. Recusandae, rerum. Culpa earum, reiciendis dolores!</em>
+    </footer>
+</body>
+</html>

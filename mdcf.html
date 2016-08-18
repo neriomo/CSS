@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>modelo de dise&ntilde;o de caja flexible</title>
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.con/css?family= Rosario">
+    
+    <style type="text/css">
+        
+        .flexbox
+        {
+            width: 600px;
+            height: 550px;
+            display: -webkit-inline-box;
+            box-orient: horizontal;
+
+        }
+    
+        .flexbox > div
+        {    
+            -webkit-transition: 1s ease-out;
+            transition: 10s ease-out;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 120px;
+            margin: 10px -10px 10px 0px;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 10px 10px 10px dimgrey;
+            
+        }
+        
+        .flexbox > div:nth-child(1){background-color: lightgrey;}
+        .flexbox > div:nth-child(2){background-color: lightgrey;}
+        .flexbox > div:nth-child(3){background-color: lightgrey;}
+        .flexbox > div:nth-child(4){background-color: lightgrey;}
+        
+        .flexbox >div:hover{
+            width: 200px; color: white; font-weight: bold;}
+        
+        .flexbox > div:nth-child(1):hover {background-color: royalblue;}
+        
+        .flexbox > div:nth-child(2):hover {background-color: crimson;}
+        
+        .flexbox > div:nth-child(3):hover {background-color: crimson;}
+        
+        .flexbox > div:nth-child(4):hover {background-color: darkgreen;}
+
+        p {height: 250px; overflow: hidden; font-family: "Rosario"}
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div>
+            <img src="resources/Double_arrow_icon.png" alt="Icono de prueba" width="120px">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quam delectus praesentium molestiae itaque maiores quis, molestias laudantium nam. Dolor magnam atque blanditiis repudiandae adipisci corporis, nemo maiores fuga libero!
+            </p>
+        </div>
+        
+        <div>
+            <img src="resources/Double_arrow_icon.png" alt="Icono de prueba 2" width="120px">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ex eveniet, mollitia rerum blanditiis laboriosam, quisquam quia minima sed reiciendis totam voluptatibus nihil aspernatur aperiam tempora non quasi repudiandae iure.
+            </p>
+        </div>
+        
+        <div>
+            <img src="resources/Double_arrow_icon.png" alt="Icono de prueba 2" width="120px">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ex eveniet, mollitia rerum blanditiis laboriosam, quisquam quia minima sed reiciendis totam voluptatibus nihil aspernatur aperiam tempora non quasi repudiandae iure.
+            </p>
+        </div>
+        
+        <div>
+            <img src="resources/Double_arrow_icon.png" alt="Icono de prueba 2" width="120px">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ex eveniet, mollitia rerum blanditiis laboriosam, quisquam quia minima sed reiciendis totam voluptatibus nihil aspernatur aperiam tempora non quasi repudiandae iure.
+            </p>
+        </div>        
+    </div>
+</body>
+</html>

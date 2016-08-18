@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--Multiples imagenes de fondo en css3-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiples fondos</title>
+    <style type="text/css">
+    
+        div.fondo
+        {
+            background-image: url(resources/homero_vidas.jpg),
+            url(resources/Imagen_incio.jpg);
+            
+            background-position: bottom right,100% center;
+            background-origin: border-box,content-box;
+            background-repeat: no-repeat,repeat;
+        }
+        
+        div.contenido
+        {
+            padding: 10px 15px;
+            color: white;
+            font-size: 150%;
+        }
+    </style>
+
+
+
+</head>
+<body>
+   <div class="fondo">
+   <div class="contenido">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum doloribus facere sed mollitia <sup>laboriosam</sup> ducimus nesciunt quae omnis sint earum dignissimos facilis qui, saepe accusamus a, repellat molestiae magnam, dicta.</p>
+    </div></div>
+</body>
+</html>
